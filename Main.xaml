@@ -1,0 +1,431 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,3433" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Data.Common</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="643,3368" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="typeArea" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog 'type Area'" sap:VirtualizedContainerService.HintSize="581,324" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Select the type area: " OptionsString="Global;Region" Title="Best Post Times">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[typeArea]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Switch x:TypeArguments="x:String" DisplayName="Switch 'typeArea'" Expression="[typeArea]" sap:VirtualizedContainerService.HintSize="581,2956" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence x:Key="Global" DisplayName="Global" sap:VirtualizedContainerService.HintSize="541,559" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="sd:DataTable" Name="dt_Global" />
+          <Variable x:TypeArguments="x:Int32" Name="TotalColumn_dt_Global" />
+          <Variable x:TypeArguments="x:String" Name="HTML_String" />
+          <Variable x:TypeArguments="x:String" Name="String_HTML" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_Global]" DisplayName="Read Range Workbook 'dt_Global'" sap:VirtualizedContainerService.HintSize="479,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\Best Time Post Global.xlsx" />
+        <ui:MultipleAssign DisplayName="Multiple Assign 'TotalColumn_dt_Global &amp; HTML_String'" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+          <ui:MultipleAssign.AssignOperations>
+            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:Int32">[TotalColumn_dt_Global]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:Int32">[dt_Global.ColumnCount]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[HTML_String]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;table border = "+ TotalColumn_dt_Global.ToString + "style=""width:100%"" style=""border:1px solid #333""&gt;&lt;tr&gt;&lt;td&gt;" + String.Join("&lt;/td&gt;&lt;td&gt;", dt_Global.Columns.Cast(Of System.Data.DataColumn).Select(Function(x) x.ColumnName).ToArray) + "&lt;/td&gt;&lt;/tr&gt;" + 
+"&lt;tr&gt;" + String.Join("&lt;/tr&gt;&lt;tr&gt;",(
+														From x In dt_Global.AsEnumerable
+														Let cells = "&lt;td&gt;" + String.Join("&lt;/td&gt;&lt;td&gt;", x.ItemArray) + "&lt;/td&gt;"
+														Select cells
+														).ToArray) + "&lt;/tr&gt;" + "&lt;/table&gt;"]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+            </scg:List>
+          </ui:MultipleAssign.AssignOperations>
+        </ui:MultipleAssign>
+        <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="ula.geceviciute@ktu.edu" Body="[&quot;Best time to Post in global: &quot; + vbNewLine + vbNewLine + vbNewLine + HTML_String]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="479,175" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="Best Times Post Instagram" To="ula22ula@gmail.com">
+          <ui:SendOutlookMail.Files>
+            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+          </ui:SendOutlookMail.Files>
+        </ui:SendOutlookMail>
+      </Sequence>
+      <Sequence x:Key="Region" DisplayName="Region" sap:VirtualizedContainerService.HintSize="541,2725" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="Country" />
+          <Variable x:TypeArguments="x:String" Name="City" />
+          <Variable x:TypeArguments="sd:DataTable" Name="dt_Extract" />
+          <Variable x:TypeArguments="x:Int32" Name="TotalColumn_dt_Extract" />
+          <Variable x:TypeArguments="x:String" Name="HTML_String" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="479,271" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter the country: " Title="Best Post Times">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[Country]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="479,271" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter the city: " Title="Best Post Times">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:String">[City]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Instagram Post Times Planner [Free Post Time Tool]" sap:VirtualizedContainerService.HintSize="479,1744" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="359a643f-3987-468d-9bb5-6fedc35783c0" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1495" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                <uix:NSelectItem DisplayName="Select Item 'Choose social media'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="TikTok" ScopeIdentifier="359a643f-3987-468d-9bb5-6fedc35783c0" Version="V3">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="5">
+                      <x:String>Instagram</x:String>
+                      <x:String>Facebook</x:String>
+                      <x:String>TikTok</x:String>
+                      <x:String>YouTube</x:String>
+                      <x:String>LinkedIn</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="https://influencermarketinghub.com/instagram-post-planner/" CvTextArea="749, 352, 415, 22" CvTextArgument="What is the location of your largest following:" CvType="Text" DesignTimeRectangle="685, 322, 550, 45" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Instagram'" FullSelectorArgument="&lt;webctrl aria-role='combobox' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='SPAN' type='' class='select2-selection select2-selection--single' aaname='' /&gt;" Guid="5dee853e-23e3-49da-a350-7f7db307f402" InformativeScreenshot="c383bd6082d730f84bba505c957274f9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram Post Times Planner [Free Post Time Tool]' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="703, 285, 69, 17" CvTextArgument="Instagram" CvType="Text" DesignTimeRectangle="685, 273, 550, 24" ElementType="Text" FriendlyName="'Choose the'" FullSelectorArgument="&lt;webctrl parentid='best_time_post_form' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='best_time_post_form' tag='DIV' type='' class='small_caption' aaname=' Choose the Channel where you want to post ' check:innerText='Choose the Channel where you want to post' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <uix:NSelectItem DisplayName="Select Item 'Audience Country'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[Country]" ScopeIdentifier="359a643f-3987-468d-9bb5-6fedc35783c0" Version="V3">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="50">
+                      <x:String>Audience Country</x:String>
+                      <x:String>United States of America</x:String>
+                      <x:String>United Kingdom</x:String>
+                      <x:String>Australia</x:String>
+                      <x:String>Germany</x:String>
+                      <x:String>Brazil</x:String>
+                      <x:String>Afghanistan</x:String>
+                      <x:String>Aland</x:String>
+                      <x:String>Albania</x:String>
+                      <x:String>Algeria</x:String>
+                      <x:String>American Samoa</x:String>
+                      <x:String>Andorra</x:String>
+                      <x:String>Angola</x:String>
+                      <x:String>Antarctica</x:String>
+                      <x:String>Antigua and Barbuda</x:String>
+                      <x:String>Argentina</x:String>
+                      <x:String>Armenia</x:String>
+                      <x:String>Aruba</x:String>
+                      <x:String>Austria</x:String>
+                      <x:String>Azerbaijan</x:String>
+                      <x:String>Bahrain</x:String>
+                      <x:String>Bangladesh</x:String>
+                      <x:String>Barbados</x:String>
+                      <x:String>Belarus</x:String>
+                      <x:String>Belgium</x:String>
+                      <x:String>Belize</x:String>
+                      <x:String>Benin</x:String>
+                      <x:String>Bermuda</x:String>
+                      <x:String>Bhutan</x:String>
+                      <x:String>Bolivia</x:String>
+                      <x:String>Bosnia and Herzegovina</x:String>
+                      <x:String>Botswana</x:String>
+                      <x:String>Brunei</x:String>
+                      <x:String>Bulgaria</x:String>
+                      <x:String>Burkina Faso</x:String>
+                      <x:String>Burundi</x:String>
+                      <x:String>Cambodia</x:String>
+                      <x:String>Cameroon</x:String>
+                      <x:String>Canada</x:String>
+                      <x:String>Cape Verde</x:String>
+                      <x:String>Cayman Islands</x:String>
+                      <x:String>Central African Republic</x:String>
+                      <x:String>Chad</x:String>
+                      <x:String>Chile</x:String>
+                      <x:String>China</x:String>
+                      <x:String>Colombia</x:String>
+                      <x:String>Comoros</x:String>
+                      <x:String>Congo (Brazzaville)</x:String>
+                      <x:String>Congo (Kinshasa)</x:String>
+                      <x:String>Cook Islands</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="https://influencermarketinghub.com/instagram-post-planner/" CvTextArea="702, 465, 124, 18" CvTextArgument="Audience Country" CvType="Text" DesignTimeRectangle="685, 451, 260, 45" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Audience Country'" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-country_select-container' aria-role='combobox' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='select2-country_select-container' aria-role='combobox' tag='SPAN' type='' class='select2-selection select2-selection--single' aaname='' /&gt;" Guid="4c1a6c08-e603-4399-9e6e-06b8dfab582a" InformativeScreenshot="dbe8a9412a0c7b1ee1e2152e24ea7b03.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram Post Times Planner [Free Post Time Tool]' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="354,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                <uix:NSelectItem DisplayName="Select Item 'Audience City'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[City]" ScopeIdentifier="359a643f-3987-468d-9bb5-6fedc35783c0" Version="V3">
+                  <uix:NSelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="50">
+                      <x:String>Audience City</x:String>
+                      <x:String>Central Coast</x:String>
+                      <x:String>Sunshine Coast</x:String>
+                      <x:String>Bourke</x:String>
+                      <x:String>Pine Creek</x:String>
+                      <x:String>Adelaide River</x:String>
+                      <x:String>McMinns Lagoon</x:String>
+                      <x:String>Newcastle Waters</x:String>
+                      <x:String>Ravensthorpe</x:String>
+                      <x:String>Wagin</x:String>
+                      <x:String>Roebourne</x:String>
+                      <x:String>Pannawonica</x:String>
+                      <x:String>Tom Price</x:String>
+                      <x:String>Kalbarri</x:String>
+                      <x:String>Mount Magnet</x:String>
+                      <x:String>Morawa</x:String>
+                      <x:String>Port Denison</x:String>
+                      <x:String>Merredin</x:String>
+                      <x:String>Mount Barker</x:String>
+                      <x:String>Katanning</x:String>
+                      <x:String>Narrogin</x:String>
+                      <x:String>Gingin</x:String>
+                      <x:String>Bunbury</x:String>
+                      <x:String>Kwinana</x:String>
+                      <x:String>Southern Cross</x:String>
+                      <x:String>Kaltukatjara</x:String>
+                      <x:String>Queanbeyan</x:String>
+                      <x:String>Tweed Heads</x:String>
+                      <x:String>Ivanhoe</x:String>
+                      <x:String>Wilcannia</x:String>
+                      <x:String>Merimbula</x:String>
+                      <x:String>Echuca</x:String>
+                      <x:String>Deniliquin</x:String>
+                      <x:String>Nowra</x:String>
+                      <x:String>Ulladulla</x:String>
+                      <x:String>Batemans Bay</x:String>
+                      <x:String>Cooma</x:String>
+                      <x:String>Tumut</x:String>
+                      <x:String>Leeton</x:String>
+                      <x:String>Young</x:String>
+                      <x:String>Cowra</x:String>
+                      <x:String>Forbes</x:String>
+                      <x:String>Goulburn</x:String>
+                      <x:String>Kiama</x:String>
+                      <x:String>Katoomba</x:String>
+                      <x:String>Richmond</x:String>
+                      <x:String>Lithgow</x:String>
+                      <x:String>Parkes</x:String>
+                      <x:String>Bathurst</x:String>
+                      <x:String>Maitland</x:String>
+                    </scg:List>
+                  </uix:NSelectItem.Items>
+                  <uix:NSelectItem.Target>
+                    <uix:TargetAnchorable BrowserURL="https://influencermarketinghub.com/instagram-post-planner/" CvTextArea="992, 465, 96, 18" CvTextArgument="Audience City" CvType="Text" DesignTimeRectangle="975, 451, 260, 45" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Audience City'" FullSelectorArgument="&lt;webctrl aria-labelledby='select2-city_select-container' aria-role='combobox' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='select2-city_select-container' aria-role='combobox' tag='SPAN' type='' class='select2-selection select2-selection--single' aaname='' /&gt;" Guid="24bbf081-f4cf-47a7-8cb1-9e4f352b024c" InformativeScreenshot="0bf3700daf34760dd02e742139e06f03.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram Post Times Planner [Free Post Time Tool]' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                  </uix:NSelectItem.Target>
+                </uix:NSelectItem>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Calculate'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="359a643f-3987-468d-9bb5-6fedc35783c0" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://influencermarketinghub.com/instagram-post-planner/" CvElementArea="833, 528, 253, 50" CvTextArea="918, 544, 82, 16" CvTextArgument="Calculate" CvType="Button" DesignTimeRectangle="836, 531, 248, 45" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Calculate'" FullSelectorArgument="&lt;webctrl id='btn_submit' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn_submit' tag='BUTTON' type='submit' class='time_btn_default' aaname='Calculate' check:innerText='Calculate' /&gt;" Guid="3370c7ca-807f-4415-956e-ced9626f84b1" InformativeScreenshot="77fd9c492586ba9aa6e7f4a2402baea1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram Post Times Planner [Free Post Time Tool]' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="354,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="354,169" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="7" Version="V3" />
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Extract]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='CV' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' ReferenceIdx='0' Name='Column1' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Monday' ReferenceIdx='1' Name='Monday'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Tuesday' ReferenceIdx='2' Name='Tuesday'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Wednesday' ReferenceIdx='3' Name='Wednesday'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Thursday' ReferenceIdx='4' Name='Thursday'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Friday' ReferenceIdx='5' Name='Friday'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Saturday' ReferenceIdx='6' Name='Saturday'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Sunday' ReferenceIdx='7' Name='Sunday'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="359a643f-3987-468d-9bb5-6fedc35783c0" Version="V3">
+                  <uix:NExtractData.ExtractMetadata>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </uix:NExtractData.ExtractMetadata>
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable BrowserURL="https://influencermarketinghub.com/instagram-post-planner/" CvElementArea="544, 221, 808, 653" CvType="Table" DesignTimeRectangle="560, 262, 110, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl class='time_line_label' parentid='time_plan' tag='DIV' /&gt;" Guid="345faa41-8aff-49c2-afed-2d47bde854b1" InformativeScreenshot="62155f88bf26f4bbf9a4a6f1a08f9bce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram Post Times Planner [Free Post Time Tool]' /&gt;" SearchSteps="CV" Version="V2" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                </uix:NExtractData>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFMSURBVFhH1ZIxS8QwGIbr7OKqoza6ioI4WK6Tq4NL6k9wOr3e6MEJ4p9xdBVq8d940gbcaz78PjhD2iQ1CdwDL0ePI89zbZONRuT3591luY2XcQG5yMu2yac7+FU8VtndWSvlMqCLHgByKW5AHj1AlUcN0MmjBYgeOSx4QHsxOxWT8ksnhwUNMMlhwQJs5LAgAbZymPeANpuf2MphXgO+8/mxPHSlSobmLWCMHOYl4DOb7srDnOWwN8bLKi1uXfdxxPdQ/4uYzBY6gWmvB9fdOyvclhbPqP1LMyLCNaBO+RPq9LhGuAQY5YRLhG2AtZywjbAJcJYTNi+mKaBi/BGPG4fpTgwF1IfFEo/5H0MRfQHe5ETf49AFeJcTujuhBgSTE2rEekDNbh7wZ2FZj6CAmvE4coIiIKCK9c9V4MV82b8K+8wt2MLPTSRJfgAklFFehIP5LgAAAABJRU5ErkJggg==" InformativeScreenshot="b09696e939369fc36fedfffca3f2cddc.jpg" Selector="&lt;html app='chrome.exe' title='Instagram Post Times Planner [Free Post Time Tool]' /&gt;" Title="Instagram Post Times Planner [Free Post Time Tool]" Url="https://influencermarketinghub.com/instagram-post-planner/" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+        <ui:MultipleAssign DisplayName="Multiple Assign 'TotalColumn_dt_Global &amp; HTML_String'" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+          <ui:MultipleAssign.AssignOperations>
+            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:Int32">[TotalColumn_dt_Extract]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:Int32">[dt_Extract.ColumnCount]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                <ui:AssignOperation.To>
+                  <OutArgument x:TypeArguments="x:String">[HTML_String]</OutArgument>
+                </ui:AssignOperation.To>
+                <ui:AssignOperation.Value>
+                  <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;table border = "+ TotalColumn_dt_Extract.ToString + "style=""width:100%"" style=""border:1px solid #333""&gt;&lt;tr&gt;&lt;td&gt;" + String.Join("&lt;/td&gt;&lt;td&gt;", dt_Extract.Columns.Cast(Of System.Data.DataColumn).Select(Function(x) x.ColumnName).ToArray) + "&lt;/td&gt;&lt;/tr&gt;" + 
+"&lt;tr&gt;" + String.Join("&lt;/tr&gt;&lt;tr&gt;",(
+														From x In dt_Extract.AsEnumerable
+														Let cells = "&lt;td&gt;" + String.Join("&lt;/td&gt;&lt;td&gt;", x.ItemArray) + "&lt;/td&gt;"
+														Select cells
+														).ToArray) + "&lt;/tr&gt;" + "&lt;/table&gt;"]</InArgument>
+                </ui:AssignOperation.Value>
+              </ui:AssignOperation>
+            </scg:List>
+          </ui:MultipleAssign.AssignOperations>
+        </ui:MultipleAssign>
+        <ui:SendOutlookMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Account="ula.geceviciute@ktu.edu" Body="[&quot;Best time to Post in &quot; + Country + &quot;, &quot; + City+ &quot;: &quot; + vbNewLine + vbNewLine + vbNewLine + HTML_String]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="479,175" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="Best Times Post Instagram" To="ula22ula@gmail.com">
+          <ui:SendOutlookMail.Files>
+            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+          </ui:SendOutlookMail.Files>
+        </ui:SendOutlookMail>
+      </Sequence>
+    </Switch>
+  </Sequence>
+</Activity>
